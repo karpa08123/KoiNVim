@@ -7,9 +7,19 @@ return{
 			require('colorizer').setup()
 		end,
 	},  
-	{'akinsho/toggleterm.nvim', version = "*", opts = {
-		open_mapping = [[<C-`>]], -- Define la combinación para abrir/cerrar la terminal
-		direction = "horizontal", -- Opcional: abre la terminal en un modo flotante
-		close_on_exit = true, -- Cierra automáticamente la terminal cuando el proceso termina	
-	}},
+    {'christoomey/vim-tmux-navigator'},
+    {
+        'windwp/nvim-autopairs',
+        config = true,
+        opts = {
+            disable_in_replace_mode = true,
+            enable_moveright = true,
+            enable_afterquote = true,
+            enable_check_bracket_line = true,
+        }
+    },
+    {
+        "OXY2DEV/markview.nvim",
+        lazy = false
+    },
 }

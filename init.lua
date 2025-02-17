@@ -28,4 +28,5 @@ require('plugins.gitsigns'),
 require('plugins.misc'),
 require('plugins.dashboard'),
 require('plugins.catpuccin'),
+-- require('plugins.obsidian'),
 })

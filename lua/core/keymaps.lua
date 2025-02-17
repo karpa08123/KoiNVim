@@ -55,3 +55,10 @@ vim.keymap.set('n', '<A-Right>', ':wincmd l<CR>', opts)
 vim.keymap.set('v', '<', '<gv', opts)
 vim.keymap.set('v', '>', '>gv', opts)
 
+vim.keymap.set('n', 'U', '<C-r>', opts)
+
+-- Tmux
+vim.keymap.set('n', '<C-S>h', '<cmd> TmuxNavigateLeft<CR>', opts)
+vim.keymap.set('n', '<C-S>l', '<cmd> TmuxNavigateRight<CR>', opts)
+vim.keymap.set('n', '<C-S>k', '<cmd> TmuxNavigateUp<CR>', opts)
+vim.keymap.set('n', '<C-S>j', '<cmd> TmuxNavigateDown<CR>', opts)

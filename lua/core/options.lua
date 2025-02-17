@@ -1,4 +1,5 @@
 vim.wo.number = true -- Make line numbers (default: false)
+vim.wo.relativenumber = true -- Turns Relative line numbers on
 vim.o.clipboard = 'unnamedplus' -- Sync clipboard between OS and nvim (default: '')
 vim.o.wrap = true -- Display lines as one long line (default: true)
 vim.o.linebreak = true -- Companion to wrap, don't split words (default: false)
@@ -15,12 +16,11 @@ vim.o.writebackup = false -- Creates a backupfile during the write of the file
 vim.o.completeopt = 'menuone,noinsert,noselect,preview' -- Creates a completition window
 vim.opt.termguicolors = true -- Set term gui colors to enable highlight groups
 vim.o.whichwrap = '<>hl' -- Wich keys are allowed to travel to next/prev line
-vim.o.linebreak = true -- Divides a long line into multiple lines
-vim.o.scrolloff = 3 -- Minimal number of screen lines to keep above and below the cursor
+vim.o.scrolloff = 4 -- Minimal number of screen lines to keep above and below the cursor
 vim.o.shiftwidth = 4 -- Number of spaces inserted for each identation
 vim.o.tabstop = 4 -- Insert n spaces for tab
 vim.o.softtabstop = 4 -- Number of spaces that a tab counts for while performing editing operations
-vim.o.expandtab = false -- convert tabs to spaces
+vim.o.expandtab = true -- convert tabs to spaces
 vim.o.cursorline = true -- highlight the current line
 vim.o.splitbelow = true -- force all horizontal splits to go below current window
 vim.o.splitright = true -- force all vertical splits to go to the right of the current window
@@ -32,4 +32,4 @@ vim.o.backspace = 'indent,eol,start' -- allow backspace on
 vim.o.pumheight = 7 -- pop up menu height
 vim.o.fileencoding = 'utf-8' -- the encoding written to a file
 vim.o.cmdheight = 1 -- lines of the command prompt in vim
-
+vim.opt.conceallevel = 2
